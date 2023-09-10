@@ -36,8 +36,24 @@ public:
         WHITE
     };
 
+    enum class Style {
+        DEFAULT = 0,
+        BOLD = 1,
+        DIM = 2,
+        ITALIC = 3,
+        UNDERLINE = 4,
+        BLINK = 5,
+        INVERT = 7,
+        HIDDEN = 8
+    };
+
+    static std::string apply(const std::string& context, Style Style, ForeColor text_color, BackgroundColor bc_color);
     static std::string apply(const std::string& context, ForeColor text_color);
+    static std::string apply(const std::string& context, BackgroundColor bc_color);
+    static std::string apply(const std::string& context, Style style);
     static std::string apply(const std::string& context, ForeColor text_color, BackgroundColor bc_color);
+    static std::string apply(const std::string& context, Style style, ForeColor text_color);
+    static std::string apply(const std::string& context, Style style, BackgroundColor bc_color);
 };
 
 }
