@@ -8,16 +8,6 @@ std::string Stylize::apply(const std::string& context, Stylize::Style style, Sty
     return "\033[" + std::to_string(static_cast<int>(style)) + ";" + std::to_string(static_cast<int>(text_color)) + ";" + std::to_string(static_cast<int>(bc_color)) + "m" + context + "\033[0m";
 }
 
-/*
-std::string Stylize::apply(const std::string& context, Stylize::ForeColor text_color) {
-    return "\033[" + std::to_string(static_cast<int>(text_color)) + "m" + context +  "\033[0m";
-}
-
-std::string Stylize::apply(const std::string& context, Stylize::ForeColor text_color, Stylize::BackgroundColor bc_color) {
-    return "\033[" + std::to_string(static_cast<int>(text_color)) + ";" + std::to_string(static_cast<int>(bc_color)) + "m" + context + "\033[0m";
-}
-*/
-
 std::string Stylize::apply(const std::string& context, ForeColor text_color) {
     return apply(context, Style::DEFAULT, text_color, BackgroundColor::DEFAULT);
 }

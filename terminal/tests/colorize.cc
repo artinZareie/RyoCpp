@@ -1,15 +1,15 @@
 #include <gtest/gtest.h>
-#include "../headers/colorize.hpp"
+#include "../headers/stylize.hpp"
 #include <string>
+#include <iostream>
 
-TEST(TerminalColorize, Red) {
-    ASSERT_EQ(std::string("\033[31mHello\033[0m"), Ryo::Terminal::Colorize::apply("Hello", Ryo::Terminal::Colorize::ForeColor::RED));
-}
-
-TEST(TerminalColorize, Black) {
-    ASSERT_EQ(std::string("\033[30mHello\033[0m"), Ryo::Terminal::Colorize::apply("Hello", Ryo::Terminal::Colorize::ForeColor::BLACK));
-}
-
-TEST(TerminalColorize, RedInWhite) {
-    ASSERT_EQ(std::string("\033[31;47mHello\033[0m"), Ryo::Terminal::Colorize::apply("Hello", Ryo::Terminal::Colorize::ForeColor::RED, Ryo::Terminal::Colorize::BackgroundColor::WHITE));
+TEST(Terminal, StylizeApplyTests) {
+    EXPECT_EQ(std::string("\033[0;31;40mHello\033[0m"), Ryo::Terminal::Stylize::apply("Hello", Ryo::Terminal::Stylize::ForeColor::RED));
+    EXPECT_EQ(std::string("\033[0;30;40mHello\033[0m"), Ryo::Terminal::Stylize::apply("Hello", Ryo::Terminal::Stylize::ForeColor::BLACK));
+    EXPECT_EQ(std::string("\033[0;31;47mHello\033[0m"), Ryo::Terminal::Stylize::apply("Hello", Ryo::Terminal::Stylize::ForeColor::RED, Ryo::Terminal::Stylize::BackgroundColor::WHITE));
+    EXPECT_EQ(Ryo::Terminal::Stylize::apply("Bold Blue Text on Green Background",
+                                Ryo::Terminal::Stylize::Style::BOLD,
+                                Ryo::Terminal::Stylize::ForeColor::BLUE,
+                                Ryo::Terminal::Stylize::BackgroundColor::GREEN),
+                "\033[1;34;42mBold Blue Text on Green Background\033[0m");
 }

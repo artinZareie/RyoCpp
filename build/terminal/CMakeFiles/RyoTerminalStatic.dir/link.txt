@@ -1,2 +1,0 @@
-/usr/bin/ar qc libRyoTerminalStatic.a CMakeFiles/RyoTerminalStatic.dir/resources/choice.cpp.o CMakeFiles/RyoTerminalStatic.dir/resources/stylize.cpp.o CMakeFiles/RyoTerminalStatic.dir/resources/terminal.cpp.o
-/usr/bin/ranlib libRyoTerminalStatic.a

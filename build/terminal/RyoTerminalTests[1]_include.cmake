@@ -1,5 +1,0 @@
-if(EXISTS "/home/artin/Documents/Projects/Ryo/build/terminal/RyoTerminalTests[1]_tests.cmake")
-  include("/home/artin/Documents/Projects/Ryo/build/terminal/RyoTerminalTests[1]_tests.cmake")
-else()
-  add_test(RyoTerminalTests_NOT_BUILT RyoTerminalTests_NOT_BUILT)
-endif()
