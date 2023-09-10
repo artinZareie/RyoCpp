@@ -254,4 +254,4 @@ terminal/CMakeFiles/RyoTerminalTests.dir/tests/colorize.cc.o: \
  /home/artin/Documents/Projects/Ryo/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/artin/Documents/Projects/Ryo/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  /home/artin/Documents/Projects/Ryo/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
- /home/artin/Documents/Projects/Ryo/terminal/tests/../headers/colorize.hpp
+ /home/artin/Documents/Projects/Ryo/terminal/tests/../headers/stylize.hpp

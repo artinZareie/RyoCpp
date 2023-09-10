@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/artin/Documents/Projects/Ryo/terminal/resources/choice.cpp" "terminal/CMakeFiles/RyoTerminal.dir/resources/choice.cpp.o" "gcc" "terminal/CMakeFiles/RyoTerminal.dir/resources/choice.cpp.o.d"
-  "/home/artin/Documents/Projects/Ryo/terminal/resources/colorize.cpp" "terminal/CMakeFiles/RyoTerminal.dir/resources/colorize.cpp.o" "gcc" "terminal/CMakeFiles/RyoTerminal.dir/resources/colorize.cpp.o.d"
+  "/home/artin/Documents/Projects/Ryo/terminal/resources/stylize.cpp" "terminal/CMakeFiles/RyoTerminal.dir/resources/stylize.cpp.o" "gcc" "terminal/CMakeFiles/RyoTerminal.dir/resources/stylize.cpp.o.d"
   "/home/artin/Documents/Projects/Ryo/terminal/resources/terminal.cpp" "terminal/CMakeFiles/RyoTerminal.dir/resources/terminal.cpp.o" "gcc" "terminal/CMakeFiles/RyoTerminal.dir/resources/terminal.cpp.o.d"
   )
 

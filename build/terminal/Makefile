@@ -243,35 +243,35 @@ resources/choice.cpp.s:
 	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalTests.dir/build.make terminal/CMakeFiles/RyoTerminalTests.dir/resources/choice.cpp.s
 .PHONY : resources/choice.cpp.s
 
-resources/colorize.o: resources/colorize.cpp.o
-.PHONY : resources/colorize.o
+resources/stylize.o: resources/stylize.cpp.o
+.PHONY : resources/stylize.o
 
 # target to build an object file
-resources/colorize.cpp.o:
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalStatic.dir/build.make terminal/CMakeFiles/RyoTerminalStatic.dir/resources/colorize.cpp.o
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminal.dir/build.make terminal/CMakeFiles/RyoTerminal.dir/resources/colorize.cpp.o
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalTests.dir/build.make terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o
-.PHONY : resources/colorize.cpp.o
+resources/stylize.cpp.o:
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalStatic.dir/build.make terminal/CMakeFiles/RyoTerminalStatic.dir/resources/stylize.cpp.o
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminal.dir/build.make terminal/CMakeFiles/RyoTerminal.dir/resources/stylize.cpp.o
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalTests.dir/build.make terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o
+.PHONY : resources/stylize.cpp.o
 
-resources/colorize.i: resources/colorize.cpp.i
-.PHONY : resources/colorize.i
+resources/stylize.i: resources/stylize.cpp.i
+.PHONY : resources/stylize.i
 
 # target to preprocess a source file
-resources/colorize.cpp.i:
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalStatic.dir/build.make terminal/CMakeFiles/RyoTerminalStatic.dir/resources/colorize.cpp.i
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminal.dir/build.make terminal/CMakeFiles/RyoTerminal.dir/resources/colorize.cpp.i
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalTests.dir/build.make terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.i
-.PHONY : resources/colorize.cpp.i
+resources/stylize.cpp.i:
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalStatic.dir/build.make terminal/CMakeFiles/RyoTerminalStatic.dir/resources/stylize.cpp.i
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminal.dir/build.make terminal/CMakeFiles/RyoTerminal.dir/resources/stylize.cpp.i
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalTests.dir/build.make terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.i
+.PHONY : resources/stylize.cpp.i
 
-resources/colorize.s: resources/colorize.cpp.s
-.PHONY : resources/colorize.s
+resources/stylize.s: resources/stylize.cpp.s
+.PHONY : resources/stylize.s
 
 # target to generate assembly for a file
-resources/colorize.cpp.s:
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalStatic.dir/build.make terminal/CMakeFiles/RyoTerminalStatic.dir/resources/colorize.cpp.s
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminal.dir/build.make terminal/CMakeFiles/RyoTerminal.dir/resources/colorize.cpp.s
-	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalTests.dir/build.make terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.s
-.PHONY : resources/colorize.cpp.s
+resources/stylize.cpp.s:
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalStatic.dir/build.make terminal/CMakeFiles/RyoTerminalStatic.dir/resources/stylize.cpp.s
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminal.dir/build.make terminal/CMakeFiles/RyoTerminal.dir/resources/stylize.cpp.s
+	cd /home/artin/Documents/Projects/Ryo/build && $(MAKE) $(MAKESILENT) -f terminal/CMakeFiles/RyoTerminalTests.dir/build.make terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.s
+.PHONY : resources/stylize.cpp.s
 
 resources/terminal.o: resources/terminal.cpp.o
 .PHONY : resources/terminal.o
@@ -346,9 +346,9 @@ help:
 	@echo "... resources/choice.o"
 	@echo "... resources/choice.i"
 	@echo "... resources/choice.s"
-	@echo "... resources/colorize.o"
-	@echo "... resources/colorize.i"
-	@echo "... resources/colorize.s"
+	@echo "... resources/stylize.o"
+	@echo "... resources/stylize.i"
+	@echo "... resources/stylize.s"
 	@echo "... resources/terminal.o"
 	@echo "... resources/terminal.i"
 	@echo "... resources/terminal.s"

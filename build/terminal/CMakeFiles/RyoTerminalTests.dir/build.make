@@ -97,19 +97,19 @@ terminal/CMakeFiles/RyoTerminalTests.dir/resources/choice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RyoTerminalTests.dir/resources/choice.cpp.s"
 	cd /home/artin/Documents/Projects/Ryo/build/terminal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artin/Documents/Projects/Ryo/terminal/resources/choice.cpp -o CMakeFiles/RyoTerminalTests.dir/resources/choice.cpp.s
 
-terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o: terminal/CMakeFiles/RyoTerminalTests.dir/flags.make
-terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o: /home/artin/Documents/Projects/Ryo/terminal/resources/colorize.cpp
-terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o: terminal/CMakeFiles/RyoTerminalTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artin/Documents/Projects/Ryo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o"
-	cd /home/artin/Documents/Projects/Ryo/build/terminal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o -MF CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o.d -o CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o -c /home/artin/Documents/Projects/Ryo/terminal/resources/colorize.cpp
+terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o: terminal/CMakeFiles/RyoTerminalTests.dir/flags.make
+terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o: /home/artin/Documents/Projects/Ryo/terminal/resources/stylize.cpp
+terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o: terminal/CMakeFiles/RyoTerminalTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artin/Documents/Projects/Ryo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o"
+	cd /home/artin/Documents/Projects/Ryo/build/terminal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o -MF CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o.d -o CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o -c /home/artin/Documents/Projects/Ryo/terminal/resources/stylize.cpp
 
-terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.i"
-	cd /home/artin/Documents/Projects/Ryo/build/terminal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artin/Documents/Projects/Ryo/terminal/resources/colorize.cpp > CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.i
+terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.i"
+	cd /home/artin/Documents/Projects/Ryo/build/terminal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artin/Documents/Projects/Ryo/terminal/resources/stylize.cpp > CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.i
 
-terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.s"
-	cd /home/artin/Documents/Projects/Ryo/build/terminal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artin/Documents/Projects/Ryo/terminal/resources/colorize.cpp -o CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.s
+terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.s"
+	cd /home/artin/Documents/Projects/Ryo/build/terminal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artin/Documents/Projects/Ryo/terminal/resources/stylize.cpp -o CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.s
 
 terminal/CMakeFiles/RyoTerminalTests.dir/resources/terminal.cpp.o: terminal/CMakeFiles/RyoTerminalTests.dir/flags.make
 terminal/CMakeFiles/RyoTerminalTests.dir/resources/terminal.cpp.o: /home/artin/Documents/Projects/Ryo/terminal/resources/terminal.cpp
@@ -129,7 +129,7 @@ terminal/CMakeFiles/RyoTerminalTests.dir/resources/terminal.cpp.s: cmake_force
 RyoTerminalTests_OBJECTS = \
 "CMakeFiles/RyoTerminalTests.dir/tests/colorize.cc.o" \
 "CMakeFiles/RyoTerminalTests.dir/resources/choice.cpp.o" \
-"CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o" \
+"CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o" \
 "CMakeFiles/RyoTerminalTests.dir/resources/terminal.cpp.o"
 
 # External object files for target RyoTerminalTests
@@ -137,7 +137,7 @@ RyoTerminalTests_EXTERNAL_OBJECTS =
 
 bin/RyoTerminalTests: terminal/CMakeFiles/RyoTerminalTests.dir/tests/colorize.cc.o
 bin/RyoTerminalTests: terminal/CMakeFiles/RyoTerminalTests.dir/resources/choice.cpp.o
-bin/RyoTerminalTests: terminal/CMakeFiles/RyoTerminalTests.dir/resources/colorize.cpp.o
+bin/RyoTerminalTests: terminal/CMakeFiles/RyoTerminalTests.dir/resources/stylize.cpp.o
 bin/RyoTerminalTests: terminal/CMakeFiles/RyoTerminalTests.dir/resources/terminal.cpp.o
 bin/RyoTerminalTests: terminal/CMakeFiles/RyoTerminalTests.dir/build.make
 bin/RyoTerminalTests: lib/libgtest_main.a

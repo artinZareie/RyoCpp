@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "../lib/libRyoTerminal.so"
   "CMakeFiles/RyoTerminal.dir/resources/choice.cpp.o"
   "CMakeFiles/RyoTerminal.dir/resources/choice.cpp.o.d"
-  "CMakeFiles/RyoTerminal.dir/resources/colorize.cpp.o"
-  "CMakeFiles/RyoTerminal.dir/resources/colorize.cpp.o.d"
+  "CMakeFiles/RyoTerminal.dir/resources/stylize.cpp.o"
+  "CMakeFiles/RyoTerminal.dir/resources/stylize.cpp.o.d"
   "CMakeFiles/RyoTerminal.dir/resources/terminal.cpp.o"
   "CMakeFiles/RyoTerminal.dir/resources/terminal.cpp.o.d"
 )
