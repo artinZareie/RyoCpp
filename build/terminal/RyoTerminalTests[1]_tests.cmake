@@ -1,0 +1,7 @@
+add_test([=[TerminalColorize.Red]=]  /home/artin/Documents/Projects/Ryo/build/bin/RyoTerminalTests [==[--gtest_filter=TerminalColorize.Red]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TerminalColorize.Red]=]  PROPERTIES WORKING_DIRECTORY /home/artin/Documents/Projects/Ryo/build/terminal SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[TerminalColorize.Black]=]  /home/artin/Documents/Projects/Ryo/build/bin/RyoTerminalTests [==[--gtest_filter=TerminalColorize.Black]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TerminalColorize.Black]=]  PROPERTIES WORKING_DIRECTORY /home/artin/Documents/Projects/Ryo/build/terminal SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[TerminalColorize.RedInWhite]=]  /home/artin/Documents/Projects/Ryo/build/bin/RyoTerminalTests [==[--gtest_filter=TerminalColorize.RedInWhite]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TerminalColorize.RedInWhite]=]  PROPERTIES WORKING_DIRECTORY /home/artin/Documents/Projects/Ryo/build/terminal SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  RyoTerminalTests_TESTS TerminalColorize.Red TerminalColorize.Black TerminalColorize.RedInWhite)

@@ -1,0 +1,5 @@
+if(EXISTS "/home/artin/Documents/Projects/Ryo/build/RyoTests[1]_tests.cmake")
+  include("/home/artin/Documents/Projects/Ryo/build/RyoTests[1]_tests.cmake")
+else()
+  add_test(RyoTests_NOT_BUILT RyoTests_NOT_BUILT)
+endif()
