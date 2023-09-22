@@ -56,6 +56,18 @@ public:
     static std::string apply(const std::string& context, Style style, BackgroundColor bc_color);
 };
 
+/**
+ * @struct ColorBundle Holds both For color and Back color.
+ * @todo UPDATE the code later to add color bundle to Stylize code, getting out the Forecolor and Backcolor enums, etc;
+*/
+struct ColorBundle {
+    Stylize::ForeColor fcolor;
+    Stylize::BackgroundColor bcolor;
+
+    ColorBundle();
+    ColorBundle(Stylize::ForeColor forecolor, Stylize::BackgroundColor backcolor);
+};
+
 }
 
 #endif

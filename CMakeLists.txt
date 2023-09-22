@@ -37,12 +37,15 @@ endif(UNIX)
 
 if(RYO_WITH_TERMINAL)
     add_subdirectory(terminal)
+    target_link_libraries(Ryo RyoTerminal)
 endif()
 
 if(RYO_WITH_WEB)
     add_subdirectory(web)
-endif()
+    target_link_libraries(Ryo web)
+    endif()
 
 if(RYO_WITH_GUI)
     add_subdirectory(gui)
-endif()
+    target_link_libraries(Ryo gui)
+    endif()

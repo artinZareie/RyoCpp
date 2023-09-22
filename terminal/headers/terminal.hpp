@@ -10,7 +10,6 @@
 #include <termios.h>
 #include <unistd.h>
 #include <cstdio>
-
 namespace Ryo::Terminal {
 
 /**
@@ -30,6 +29,24 @@ void restore_canonical_mode();
  * @details Clears a Unix terminal screen
 */
 void clear_screen();
+
+/**
+ * @fn write_line
+ * @details a helpler for `std::cout << x << std::endl;`
+*/
+template <typename T>
+inline void write_line (T x) {
+    std::cout << x << std::endl;
+}
+
+
+/**
+ * @fn newline
+ * @details a helpler for `std::cout << std::endl;`
+*/
+inline void newline() {
+    std::cout << std::endl;
+}
 
 }
 

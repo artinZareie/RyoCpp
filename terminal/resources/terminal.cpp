@@ -19,4 +19,3 @@ void Ryo::Terminal::restore_canonical_mode() {
 void Ryo::Terminal::clear_screen() {
     std::cout << "\033[H\033[J";
 }
-
