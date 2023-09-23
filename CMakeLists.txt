@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 project(Ryo VERSION 0.0.1 LANGUAGES CXX)
 
+# TODO: somehow make include files available trough #include <>
+
 # Add GoogleTest to this project.
 enable_testing()
 include(FetchContent)
@@ -37,14 +39,17 @@ endif(UNIX)
 if(RYO_WITH_TERMINAL)
     add_subdirectory(terminal)
     target_link_libraries(Ryo RyoTerminal)
+    set(TERMINAL_HEADERS_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/terminal/headers)
+    set(TERMINAL_HEADERS_DEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include/terminal)
+    file(COPY ${TERMINAL_HEADERS_SOURCE_DIR} DESTINATION ${TERMINAL_HEADERS_DEST_DIR})
 endif()
 
 if(RYO_WITH_WEB)
     add_subdirectory(web)
     target_link_libraries(Ryo web)
-    endif()
+endif()
 
 if(RYO_WITH_GUI)
     add_subdirectory(gui)
     target_link_libraries(Ryo gui)
-    endif()
+endif()
