@@ -5,9 +5,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 project(Ryo VERSION 0.0.1 LANGUAGES CXX)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build/bin)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build/lib)
-
 # Add GoogleTest to this project.
 enable_testing()
 include(FetchContent)
@@ -33,6 +30,8 @@ if(UNIX)
 
     include(GoogleTest)
     gtest_discover_tests(RyoTests)
+
+    install(DIRECTORY include/ DESTINATION include/ryo)
 endif(UNIX)
 
 if(RYO_WITH_TERMINAL)
