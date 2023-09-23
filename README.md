@@ -46,5 +46,9 @@ Happy coding!
 If you find RyoCpp useful and would like to support its development, consider:
 
 - [Becoming a Patron on Patreon](https://www.patreon.com/DeepLCity)
+- Ethereum Wallet: 0x1333Ba6ec2cD586E086E86e250591188F82Bbc5A
+- Bitcoin Wallet: bc1qetptasuplamds3df6nc58fq2ys0y2q63nvtfzp
 
 Your support helps us continue to improve and maintain RyoCpp.
+
+❤️ Thank you for your support! ❤️
