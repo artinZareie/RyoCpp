@@ -4,8 +4,20 @@ using namespace Ryo::Terminal;
 
 #ifdef __linux__ 
 
-Choices::Choices(std::string prompt, std::vector<std::string> options): m_prompt(prompt), m_options(options) {}
-Choices::Choices(std::string prompt, std::vector<char*> options): m_prompt(prompt) {
+ChoicesConfig::ChoicesConfig(): selected_style(StyleBundle(ForeColor::GREEN)), other_style(StyleBundle()), selected_speciefier(u8"*") {}
+
+Choices::Choices(std::string prompt, std::vector<std::string> options): m_prompt(prompt), m_options(options), config(ChoicesConfig()) {}
+
+Choices::Choices(std::string prompt, std::vector<char*> options): m_prompt(prompt), config() {
+    m_options.reserve(options.size());
+    for (const auto &option : options) {
+        m_options.emplace_back(std::string(option));
+    }
+}
+
+Choices::Choices(std::string prompt, std::vector<std::string> options, ChoicesConfig config): m_prompt(prompt), m_options(options), config(config) {}
+
+Choices::Choices(std::string prompt, std::vector<char*> options, ChoicesConfig config): m_prompt(prompt), config(config) {
     m_options.reserve(options.size());
     for (const auto &option : options) {
         m_options.emplace_back(std::string(option));
@@ -23,9 +35,9 @@ void Choices::print_options(int choice) {
     for (size_t i = 0; i < m_options.size(); i++)
         {
             if (i == choice)
-                std::cout << "[*] " << m_options[i] << std::endl;
+                std::cout << Stylize::apply(std::string("[") + config.selected_speciefier + std::string("] ") + m_options[i], config.selected_style) << std::endl;
             else 
-                std::cout << "[ ] " << m_options[i] << std::endl;
+                std::cout << Stylize::apply(std::string("[ ] ") + m_options[i], config.other_style) << std::endl;
         }
 }
 
@@ -76,5 +88,8 @@ unsigned int Choices::fire() {
     return choice;
 }
 
+void Choices::configure(ChoicesConfig configuration) {
+    config = configuration;
+}
 
 #endif

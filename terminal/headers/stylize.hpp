@@ -92,6 +92,8 @@ public:
     static std::string apply(const std::string& context, Style style, ForeColor text_color);
     static std::string apply(const std::string& context, Style style, BackgroundColor bc_color);
     static std::string apply(const std::string& context, StyleBundle style);
+
+    Stylize() = delete;
 };
 
 }
