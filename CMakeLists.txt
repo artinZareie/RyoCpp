@@ -16,7 +16,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-file(GLOB SOURCES "src/*.cpp" "include/*.hpp")
+file(GLOB SOURCES "src/*.cpp" "headers/*.hpp")
 file(GLOB TEST_SOURCES "tests/*.cc")
 
 option(RYO_WITH_TERMINAL "Enable the Terminal sub-library" ON)
@@ -24,6 +24,11 @@ option(RYO_WITH_WEB "Enable the Web sub-library" OFF)
 option(RYO_WITH_GUI "Enable the GUI sub-library" OFF)
 
 if(UNIX)
+
+    file(GLOB BASE_HEADERS_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/headers/*.hpp")
+    set(TERMINAL_HEADERS_DEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include/ryo)
+    file(COPY ${TERMINAL_HEADERS_SOURCE_DIR} DESTINATION ${TERMINAL_HEADERS_DEST_DIR})
+
     add_library(Ryo SHARED ${SOURCES})
     add_executable(RyoTests ${TEST_SOURCES} ${SOURCES})
 
@@ -39,8 +44,8 @@ endif(UNIX)
 if(RYO_WITH_TERMINAL)
     add_subdirectory(terminal)
     target_link_libraries(Ryo RyoTerminal)
-    set(TERMINAL_HEADERS_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/terminal/headers)
-    set(TERMINAL_HEADERS_DEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include/terminal)
+    file(GLOB TERMINAL_HEADERS_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/terminal/headers/*.hpp")
+    set(TERMINAL_HEADERS_DEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include/ryo/terminal)
     file(COPY ${TERMINAL_HEADERS_SOURCE_DIR} DESTINATION ${TERMINAL_HEADERS_DEST_DIR})
 endif()
 

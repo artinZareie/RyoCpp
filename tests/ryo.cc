@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../include/ryo.hpp"
+#include "../headers/ryo.hpp"
 
 TEST(Ryo, VersionCheck) {
     EXPECT_STREQ("0.0.1", Ryo::version());
