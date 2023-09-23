@@ -84,14 +84,14 @@ struct StyleBundle {
 class Stylize
 {
 public:
-    static std::string apply(const std::string& context, Style Style, ForeColor text_color, BackgroundColor bc_color);
-    static std::string apply(const std::string& context, ForeColor text_color);
-    static std::string apply(const std::string& context, BackgroundColor bc_color);
-    static std::string apply(const std::string& context, Style style);
-    static std::string apply(const std::string& context, ForeColor text_color, BackgroundColor bc_color);
-    static std::string apply(const std::string& context, Style style, ForeColor text_color);
-    static std::string apply(const std::string& context, Style style, BackgroundColor bc_color);
-    static std::string apply(const std::string& context, StyleBundle style);
+    static std::string apply(const std::string& context, const Style &Style, const ForeColor &text_color, const BackgroundColor &bc_color);
+    static std::string apply(const std::string& context, const ForeColor &text_color);
+    static std::string apply(const std::string& context, const BackgroundColor &bc_color);
+    static std::string apply(const std::string& context, const Style &style);
+    static std::string apply(const std::string& context, const ForeColor &text_color, const BackgroundColor &bc_color);
+    static std::string apply(const std::string& context, const Style &style, const ForeColor &text_color);
+    static std::string apply(const std::string& context, const Style &style, const BackgroundColor &bc_color);
+    static std::string apply(const std::string& context, const StyleBundle &style);
 
     Stylize() = delete;
 };
