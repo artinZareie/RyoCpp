@@ -46,3 +46,5 @@ Happy coding!
 If you find RyoCpp useful and would like to support its development, consider:
 
 - [Becoming a Patron on Patreon](https://www.patreon.com/DeepLCity)
+
+Your support helps us continue to improve and maintain RyoCpp.
