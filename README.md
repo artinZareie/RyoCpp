@@ -22,8 +22,8 @@ Visit the documentation for each library within the RyoCpp repository to learn m
 
 - [Terminal Library](/terminal): Simplify terminal interactions.
 - [Networking Library](/networking): Streamline networking tasks.
-- [Express-inspired Framework](/express-framework): Build HTTP servers with ease.
-- [GTK-based GUI Helpers](/gui-helpers): Simplify GUI development.
+- [Web Framework](/web-framework): Build HTTP servers with ease.
+- [GTK-based GUI Helpers](/gui): Simplify GUI development.
 
 ## Contributing
 
@@ -37,6 +37,6 @@ RyoCpp is open-source software released under the [MIT License](LICENSE). Feel f
 
 ## Contact
 
-If you have questions, suggestions, or need assistance, please feel free to [contact us](mailto:your-email@example.com).
+If you have questions, suggestions, or need assistance, please feel free to [contact us](mailto:artin.zareie@yahoo.com).
 
 Happy coding!
