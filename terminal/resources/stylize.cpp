@@ -4,7 +4,12 @@ using namespace Ryo::Terminal;
 
 #ifdef __linux__
 
-std::string Stylize::apply(const std::string& context, Stylize::Style style, Stylize::ForeColor text_color, Stylize::BackgroundColor bc_color) {
+StyleBundle::StyleBundle(): fcolor(ForeColor::DEFAULT), bcolor(BackgroundColor::DEFAULT), style(Style::DEFAULT) {}
+StyleBundle::StyleBundle(ForeColor forecolor): fcolor(forecolor), bcolor(BackgroundColor::DEFAULT), style(Style::DEFAULT) {}
+StyleBundle::StyleBundle(ForeColor forecolor, BackgroundColor backcolor): fcolor(forecolor), bcolor(backcolor), style(Style::DEFAULT) {}
+StyleBundle::StyleBundle(Style style, ForeColor forecolor, BackgroundColor backcolor): fcolor(forecolor), bcolor(backcolor), style(style) {}
+
+std::string Stylize::apply(const std::string& context, Style style, ForeColor text_color, BackgroundColor bc_color) {
     return "\033[" + std::to_string(static_cast<int>(style)) + ";" + std::to_string(static_cast<int>(text_color)) + ";" + std::to_string(static_cast<int>(bc_color)) + "m" + context + "\033[0m";
 }
 
@@ -30,6 +35,10 @@ std::string Stylize::apply(const std::string& context, Style style, ForeColor te
 
 std::string Stylize::apply(const std::string& context, Style style, BackgroundColor bc_color) {
     return apply(context, style, ForeColor::DEFAULT, bc_color);
+}
+
+std::string Stylize::apply(const std::string& context, StyleBundle style) {
+    return apply(context, style.style, style.fcolor, style.bcolor);
 }
 
 #endif
