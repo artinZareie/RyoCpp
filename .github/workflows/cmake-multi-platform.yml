@@ -1,0 +1,40 @@
+name: CMake Build and Test
+
+on:
+  push:
+    branches:
+      - development
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  build_and_test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        build_type: [Release]
+        c_compiler: [gcc, clang, cl]
+        cpp_compiler: [g++, clang++, cl]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set Reusable Variables
+        id: vars
+        run: echo "::set-output name=build-output-dir::${{ github.workspace }}/build"
+
+      - name: Configure CMake
+        run: |
+          mkdir -p ${{ steps.vars.outputs.build-output-dir }}
+          cd ${{ steps.vars.outputs.build-output-dir }}
+          cmake -DCMAKE_C_COMPILER=${{ matrix.c_compiler }} -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }} -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} ${{ github.workspace }}
+
+      - name: Build Project
+        run: cmake --build ${{ steps.vars.outputs.build-output-dir }} --config ${{ matrix.build_type }}
+
+      - name: Run Tests
+        run: ctest --test-dir ${{ steps.vars.outputs.build-output-dir }} --build-config ${{ matrix.build_type }}
