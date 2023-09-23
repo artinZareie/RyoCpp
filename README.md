@@ -40,3 +40,9 @@ RyoCpp is open-source software released under the [MIT License](LICENSE). Feel f
 If you have questions, suggestions, or need assistance, please feel free to [contact us](mailto:artin.zareie@yahoo.com).
 
 Happy coding!
+
+## Support Us
+
+If you find RyoCpp useful and would like to support its development, consider:
+
+- [Becoming a Patron on Patreon](https://www.patreon.com/DeepLCity)
