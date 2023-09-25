@@ -42,10 +42,11 @@ std::string Stylize::apply(const std::string& context, const StyleBundle &style)
 }
 
 TextWrapper::TextWrapper(std::string text): text(text), style() {}
-explicit TextWrapper::TextWrapper(std::string text, const StyleBundle &style): text(text), style(style) {}
+TextWrapper::TextWrapper(std::string text, const StyleBundle &style): text(text), style(style) {}
 
-std::ostream& operator<<(std::ostream &os, const TextWrapper const &text_wrapper) {
+std::ostream& Ryo::Terminal::operator<<(std::ostream &os, const TextWrapper &text_wrapper) {
     os << Stylize::apply(text_wrapper.text, text_wrapper.style);
+    return os;
 }
 
 #endif

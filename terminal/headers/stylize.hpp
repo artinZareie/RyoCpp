@@ -107,8 +107,10 @@ struct TextWrapper {
     TextWrapper(std::string text);
     explicit TextWrapper(std::string text, const StyleBundle &style);
 
-    friend std::ostream& operator<<(std::ostream &os, const TextWrapper const &text_wrapper);
+    friend std::ostream& operator<<(std::ostream &os, const TextWrapper &text_wrapper);
 };
+
+std::ostream& operator<<(std::ostream &os, const Ryo::Terminal::TextWrapper &text_wrapper);
 
 }
 
