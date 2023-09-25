@@ -96,6 +96,20 @@ public:
     Stylize() = delete;
 };
 
+/**
+ * @class TextWrapper
+ * @details wraps the text and Ryo style together.
+*/
+struct TextWrapper {
+    std::string text;
+    StyleBundle style;
+
+    TextWrapper(std::string text);
+    explicit TextWrapper(std::string text, const StyleBundle &style);
+
+    friend std::ostream& operator<<(std::ostream &os, const TextWrapper const &text_wrapper);
+};
+
 }
 
 #endif
