@@ -28,10 +28,9 @@ struct ChoicesConfig {
  * @class Choices Provides interactive multi-choice question box for terminal.
 */
 class Choices {
-private:
-    std::string m_prompt;
-    std::vector<std::string> m_options;
 public:
+    std::string menu_prompt;
+    std::vector<std::string> menu_options;
     ChoicesConfig config;
 private:
     void clear_menu_section(unsigned int num_options);

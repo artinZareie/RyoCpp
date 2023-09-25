@@ -8,5 +8,6 @@
 #include "terminal.hpp"
 #include "stylize.hpp"
 #include "choices.hpp"
+#include "prompt.hpp"
 
 #endif
