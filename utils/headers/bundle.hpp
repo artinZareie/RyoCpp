@@ -1,6 +1,3 @@
-#ifndef UTILS_BUNDLE_HPP
-#define UTILS_BUNDLE_HPP
+#pragma once
 
 #include "string.hpp"
-
-#endif

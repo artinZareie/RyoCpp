@@ -1,5 +1,4 @@
-#ifndef RYO_STRING_HPP
-#define RYO_STRING_HPP
+#pragma once
 
 #include <string>
 #include <vector>
@@ -13,5 +12,3 @@ public:
 };
 
 }
-
-#endif

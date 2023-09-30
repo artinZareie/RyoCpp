@@ -1,5 +1,4 @@
-#ifndef CHOICE_H
-#define CHOICE_H
+#pragma once
 #ifdef __linux__
 
 #include <iostream>
@@ -46,5 +45,4 @@ public:
 
 }
 
-#endif
 #endif

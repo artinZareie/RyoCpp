@@ -1,5 +1,4 @@
-#ifndef PROMPT_H
-#define PROMPT_H
+#pragma once
 #include <string>
 #include "terminal.hpp"
 #include "stylize.hpp"
@@ -25,7 +24,5 @@ public:
 };
 
 }
-
-#endif
 
 #endif
