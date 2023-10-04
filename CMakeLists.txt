@@ -43,9 +43,12 @@ endif(UNIX)
 
 add_subdirectory(utils)
 target_link_libraries(Ryo RyoUtils)
-file(GLOB UTILS_HEADERS_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/terminal/headers/*.hpp")
+file(GLOB UTILS_HEADERS_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/utils/headers/*.hpp")
+file(GLOB UTILS_TEMPLATES_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/utils/headers/templates/*.tpp")
 set(UTILS_HEADERS_DEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include/ryo/utils)
+set(UTILS_TEMPLATES_DEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include/ryo/utils/templates)
 file(COPY ${UTILS_HEADERS_SOURCE_DIR} DESTINATION ${UTILS_HEADERS_DEST_DIR})
+file(COPY ${UTILS_TEMPLATES_SOURCE_DIR} DESTINATION ${UTILS_TEMPLATES_DEST_DIR})
 
 if(RYO_WITH_TERMINAL)
     add_subdirectory(terminal)

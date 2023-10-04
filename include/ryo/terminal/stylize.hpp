@@ -1,5 +1,4 @@
-#ifndef COLORIZE_H
-#define COLORIZE_H
+#pragma once
 #include <string>
 
 #ifdef __linux__
@@ -97,7 +96,5 @@ public:
 };
 
 }
-
-#endif
 
 #endif

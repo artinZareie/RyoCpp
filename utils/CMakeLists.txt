@@ -2,7 +2,7 @@ project(RyoTerminal LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
-file(GLOB SOURCES "resources/*.cpp" "headers/*.hpp")
+file(GLOB SOURCES "resources/*.cpp" "headers/*.hpp" "templates/*.tpp")
 file(GLOB HEADER_FILES "headers/*.hpp")
 
 add_library(RyoUtilsStatic STATIC ${SOURCES})
