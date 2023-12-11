@@ -32,8 +32,7 @@ void Choices::clear_menu_section(unsigned int numenu_options) {
 }
 
 void Choices::print_options(int choice) {
-    for (size_t i = 0; i < menu_options.size(); i++)
-        {
+    for (size_t i = 0; i < menu_options.size(); i++) {
             if (i == choice)
                 std::cout << Stylize::apply(std::string("[") + config.selected_speciefier + std::string("] ") + menu_options[i], config.selected_style) << std::endl;
             else 
